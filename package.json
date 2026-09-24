@@ -1,0 +1,31 @@
+{
+  "name": "new-heaven",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "pages:dev": "vite build && wrangler pages dev dist",
+    "pages:migrate": "wrangler d1 migrations apply gulzaar-invites --local",
+    "pages:migrate:prod": "wrangler d1 migrations apply gulzaar-invites",
+    "deploy": "vite build && wrangler pages deploy dist"
+  },
+  "dependencies": {
+    "canvas-confetti": "^1.9.4",
+    "lucide-react": "^1.47.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-router-dom": "^7.18.4"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "oxlint": "^1.81.0",
+    "vite": "^8.3.0",
+    "wrangler": "^4.136.3"
+  }
+}
