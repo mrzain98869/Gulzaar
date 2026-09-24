@@ -1,0 +1,10 @@
+name = "gulzaar"
+compatibility_date = "2024-11-01"
+pages_build_output_dir = "dist"
+
+# Bind your Cloudflare D1 database (create with: npx wrangler d1 create gulzaar-invites)
+[[d1_databases]]
+binding = "DB"
+database_name = "gulzaar-invites"
+database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+migrations_dir = "migrations"
